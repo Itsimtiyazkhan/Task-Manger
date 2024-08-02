@@ -1,0 +1,122 @@
+/* styles/Home.module.css */
+.container {
+  padding: 20px;
+  background-color: aquamarine;
+  width: 100%;
+  height: auto;
+  min-height: 680px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+/* .main {
+  width: 500px;
+  height: auto;
+} */
+/* .main_div {
+  width: 768px;
+} */
+.taskList {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+}
+.taskList_profile {
+  list-style-type: none;
+  padding: 5px;
+  position: relative;
+  /* width: 480px; */
+  max-width: 768px;
+}
+.taskList_profile li {
+  max-width: 768px;
+  height: 50px;
+  padding-top: 10px;
+  overflow-y: auto;
+}
+/* .bg_img {
+  position: relative;
+  background-image: url("/assets/images/todo-project/bg-todo.jpg");
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100vh;
+  width: 100%;
+ 
+} */
+.bg_img {
+  background-color: aquamarine;
+}
+/* .bg_signup {
+  background-image: url("/assets/images/todo-project/signup-bg.jpg");
+  background-size: cover; 
+  background-attachment: fixed; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh;
+  width: 100%;
+  filter: blur(0.196px);
+ 
+} */
+.bg_signup {
+  background-color: cornflowerblue;
+}
+.taskItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.taskText {
+  max-height: 50px; /* Adjust based on font-size to limit to two lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 290px; /* Adjust as needed */
+}
+
+.taskText:hover {
+  white-space: normal;
+  overflow: auto;
+}
+
+.taskItem button {
+  margin-left: 10px;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+}
+.input_box {
+  width: 290px;
+}
+.blurredtable {
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .input_group {
+    width: 390px;
+  }
+  /* .taskList {
+      width: 300px;
+    } */
+  .taskItem {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .input_group {
+    width: 350px;
+  }
+  /* .taskList {
+      width: 300px;
+    } */
+  .taskItem {
+    width: 350px;
+  }
+}
