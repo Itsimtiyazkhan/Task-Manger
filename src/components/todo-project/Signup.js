@@ -176,7 +176,7 @@ const Signup = () => {
           </Form.Group>
 
           <Form.Group controlId="formBasicMobile" className="mb-3">
-            <Form.Label>Mobile</Form.Label>
+            <Form.Label>Age</Form.Label>
             <Form.Control
               type="number"
               placeholder="Age"
