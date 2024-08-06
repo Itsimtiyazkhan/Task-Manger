@@ -44,7 +44,7 @@ const Profile = () => {
   const [userData, setUserData] = useState(null);
   const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [showTasks, setShowTasks] = useState(true);
+  const [showTasks, setShowTasks] = useState(false);
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
@@ -163,7 +163,9 @@ const Profile = () => {
 
     tasks.forEach((task) => {
       doc.setFontSize(12);
-      const text = `${task.text} - ${task.completed ? "Completed" : "Incomplete"}`;
+      const text = `${task.text} - ${
+        task.completed ? "Completed" : "Incomplete"
+      }`;
       const textLines = doc.splitTextToSize(text, maxWidth);
       const lineHeight =
         text.length > 50 ? adjustedLineHeight : defaultLineHeight;
