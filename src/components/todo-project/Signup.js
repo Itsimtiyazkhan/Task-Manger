@@ -129,7 +129,7 @@ const Signup = () => {
           />
         </div>
         <div
-          className={`d-flex justify-content-center align-items-center col-12 col-md-6 mt-0 mt-md-4`}
+          className={`d-flex justify-content-center align-items-center col-12 col-md-6 mt-0 mt-md-4 p-2 p-md-0`}
         >
           <Form onSubmit={handleSignup} className="">
             <Form.Group controlId="Name" className="mb-2">
