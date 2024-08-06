@@ -47,21 +47,22 @@
 } */
 .bg_img {
   background-color: aquamarine;
+  height: 100vh;
 }
 /* .bg_signup {
-  background-image: url("/assets/images/todo-project/signup-bg.jpg");
-  background-size: cover; 
-  background-attachment: fixed; 
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-image: url("/assets/bg-img.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   filter: blur(0.196px);
- 
 } */
-.bg_signup {
+/* .bg_signup {
   background-color: cornflowerblue;
-}
+  height: 100vh;
+} */
 .taskItem {
   display: flex;
   align-items: center;

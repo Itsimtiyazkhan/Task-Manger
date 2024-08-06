@@ -16,7 +16,7 @@ const withAuth = (Component) => {
           setUser(user);
           setLoading(false);
         } else {
-          router.push("/todo-project/login");
+          router.push("/todo-project/signup");
         }
       });
 
@@ -24,7 +24,7 @@ const withAuth = (Component) => {
     }, [router]);
 
     if (loading) {
-      return <div>Loading...</div>;
+      return <div className="text-center d-flex ">Loading...</div>;
     }
 
     return <Component {...props} user={user} />;

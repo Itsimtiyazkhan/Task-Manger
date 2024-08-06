@@ -17,11 +17,14 @@ const validatePassword = (password) => password.length > 0;
 const getCustomErrorMessage = (errorCode) => {
   const errorMessages = {
     "auth/invalid-email": "The email address is not valid.",
-    "auth/user-disabled": "The user account has been disabled by an administrator.",
-    "auth/user-not-found": "There is no user record corresponding to this email. Please create an account.",
+    "auth/user-disabled":
+      "The user account has been disabled by an administrator.",
+    "auth/user-not-found":
+      "There is no user record corresponding to this email. Please create an account.",
     "auth/wrong-password": "The password is incorrect.",
     "auth/weak-password": "The password is too weak.",
-    "auth/email-already-in-use": "The email address is already in use by another account.",
+    "auth/email-already-in-use":
+      "The email address is already in use by another account.",
     "auth/invalid-credential": "The provided credentials are not valid.",
     default: "An unexpected error occurred. Please try again.",
   };
@@ -86,7 +89,9 @@ const LoginPage = () => {
       header={false}
       footer={false}
     >
-      <div className={`${styles.bg_img} d-flex justify-content-center align-items-center min-vh-100`}>
+      <div
+        className={`${styles.bg_img} d-flex justify-content-center align-items-center min-vh-100`}
+      >
         <Form onSubmit={handleLogin} className="">
           <h1 className="text-center mb-4">Login</h1>
           {error && <Alert variant="danger">{error}</Alert>}
